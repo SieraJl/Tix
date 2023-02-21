@@ -15,12 +15,12 @@ Notre site web TIX.tn vous permet de réserver vos places pour assister aux comp
 
 Comment?
 si vous souhaitez réserver un billet :
-sélectionner le match auquel vous voulez assister .
-sélectionner le billet que vous souhaitez réserver .
-entrer le nombre de billets et cliquer sur bouton acheter.
-remplir le formulaire de paiement (nom,prénom,cin,adresse)et cliquer valider .
-Le système vérifie les données entrées 
-si tout va bien: votre commande va être validée et envoyée vers le guichet
+1)sélectionner le match auquel vous voulez assister .
+2)sélectionner le billet que vous souhaitez réserver .
+3)entrer le nombre de billets et cliquer sur bouton acheter.
+4)remplir le formulaire de paiement (nom,prénom,cin,adresse)et cliquer valider .
+5)Le système vérifie les données entrées 
+6)si tout va bien: votre commande va être validée et envoyée vers le guichet
 
 
 
