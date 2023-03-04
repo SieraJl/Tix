@@ -1,4 +1,4 @@
-Nom de projet :  TIX.tn 
+Nom de projet :  TIX
 
 Rôle: Vente en ligne de football-tickets
 
