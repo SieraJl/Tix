@@ -1,0 +1,46 @@
+<div class="tab-pane fade in " id={{table.seasonid}} role="tabpanel">
+    <h4>{{table.name}}</h4>
+    <table class="standing-full">
+        <tr>
+            <th>club</th>
+            <th>played</th>
+            <th>won</th>
+            <th>drawn</th>
+            <th>lost</th>
+            <th>gd</th>
+            <th>points</th>
+        </tr>
+        <!--BEGIN one line component-->
+
+        <tr *ngFor="let t of table.tablerows">
+            <td *ngIf="t.changeTotal<0" class="down">
+                
+                <i class="fa fa-caret-down" aria-hidden="true"></i> {{t.pos}} <span class="team"><img src={{this.getClubLogo(t.team.uid)}} width="30" height="30" alt="team-logo"> </span><a
+                        routerLink="/club/{{t.team.uid}}">{{t.team.mediumname}} > </a>
+            </td>
+            <td *ngIf="t.changeTotal>0" class="up">
+                <i class="fa fa-caret-up" aria-hidden="true"></i> {{t.pos}} <span class="team"><img src={{this.getClubLogo(t.team.uid)}} width="30" height="30" alt="team-logo"> </span><a
+                    routerLink="/club/{{t.team.uid}}">{{t.team.mediumname}} ></a>
+            </td>
+            <td *ngIf="t.changeTotal==0" class="none">
+                <i class="fa fa-circle" aria-hidden="true"></i> {{t.pos}} <span class="team"> <img src={{this.getClubLogo(t.team.uid)}} width="30" height="30" alt="team-logo">
+                </span><a routerLink="/club/{{t.team.uid}}">{{t.team.mediumname}} > {{t.team.uid}}</a>
+            </td>
+            
+            <td>{{t.total}}</td>
+            <td>{{t.winTotal}}</td>
+            <td>{{t.drawTotal}}</td>
+            <td>{{t.lossTotal}}</td>
+            <td>{{t.goalDiffTotal}}</td>
+            <td class="points"><span>{{t.pointsTotal}}</span></td>
+
+        </tr>
+
+        <!-- END one line component-->
+        <!--position={{}} played={{}} won={{}} drawn={{}} lost={{}} goalDifference={{}} points={{}} lastfive={{}} next={{}}
+        {{this.getClubLogo(t.team.uid)}}-->
+    </table>
+</div>
+
+
+<!-- Path: src\app\components\standing-one-table\standing-one-table.component.html -->

@@ -1,0 +1,27 @@
+ <!--STANDING TABLE WRAP BEGIN-->
+
+ <section class="standing-table-wrap">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12 col-xs-12 overflow-scroll standings-table"> 
+                <div class="tab-content">
+
+          
+                    <app-standing-one-table *ngFor="let tab of tables" [table]="tab"></app-standing-one-table>
+
+               
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2>Rules:</h2>
+                <p>{{tables[0].rules.name}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--STANDING TABLE WRAP END-->
+
+
+<!-- Compare this snippet from src\app\components\standing-one-table\standing-one-table.component.ts: -->

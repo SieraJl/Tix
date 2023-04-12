@@ -1,0 +1,18 @@
+<div class="broadcast-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>achetez vos ticket</h4>
+                <p>Vibrez au rythme des rencontres de Ligue 1 , l'un des plus grands championnats d'Afrique. Supportez votre club favori dans un stade bruyant et plein à craquer !</p>                
+            </div>
+            <div class="col-md-12">
+                <div class="broadcast-list" id="accordion" role="tablist" aria-multiselectable="true">
+                    <app-ticket *ngFor="let match of nextMatch" ligue={{ligue}} team1={{match.teams.home.name}} team2={{match.teams.away.name}} date={{match.time.date}} time={{match.time.time}}></app-ticket>
+                   
+                </div>
+					
+            </div>
+        </div>
+    </div>
+</div>
+
