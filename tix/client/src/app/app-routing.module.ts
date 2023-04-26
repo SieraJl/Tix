@@ -6,6 +6,9 @@ import { MatchesComponent } from './pages/matches/matches.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { ClubPageComponent } from './pages/club-page/club-page.component';
+import { AuthGuard } from './guards/auth.guard';
+import { CalenderComponent } from './pages/calender/calender.component';
+import { PredirComponent } from './pages/predir/predir.component';
 const routes: Routes = [
   {
     path:'',
@@ -26,6 +29,14 @@ const routes: Routes = [
   {
     path:'club/:id',
     component:ClubPageComponent
+  },
+  {
+    path:'calender',
+    component:CalenderComponent
+  },
+  {
+    path:'predir',
+    component:PredirComponent
   },
   {
     path:'**',

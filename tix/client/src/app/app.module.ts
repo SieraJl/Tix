@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +26,10 @@ import { StandingTableComponent } from './components/standing-table/standing-tab
 import { StandingLineComponent } from './components/standing-line/standing-line.component';
 import { StandingOneTableComponent } from './components/standing-one-table/standing-one-table.component';
 import { ClubPageComponent } from './pages/club-page/club-page.component';
+import { LoginComponent } from './components/login/login.component';
+import { CalenderComponent } from './pages/calender/calender.component';
+import { PredirComponent } from './pages/predir/predir.component';
+import { PredirElementComponent } from './components/predir-element/predir-element.component';
 
 @NgModule({
   declarations: [
@@ -47,12 +53,18 @@ import { ClubPageComponent } from './pages/club-page/club-page.component';
     StandingTableComponent,
     StandingLineComponent,
     StandingOneTableComponent,
-    ClubPageComponent
+    ClubPageComponent,
+    LoginComponent,
+    CalenderComponent,
+    PredirComponent,
+    PredirElementComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,76 @@
+.betting-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .team-names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .team-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .team-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .versus {
+    font-size: 1.5rem;
+  }
+  
+  .betting-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+  .button-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .win-a {
+    background-color: #28a745;
+  }
+  
+  .draw {
+    background-color: #ffc107;
+  }
+  
+  .win-b {
+    background-color: #dc3545;
+  }
+  

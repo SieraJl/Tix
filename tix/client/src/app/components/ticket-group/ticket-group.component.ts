@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { GetMatchsService } from '../../services/get-matchs.service';
-import { LigueNextMatches, Match } from '../../interfaces/ligue-next-matches';
+import { TicketService } from '../../services/ticket.service';
+import { TicketArray, Ticket } from '../../interfaces/ticket';
 
 @Component({
   selector: 'app-ticket-group',
@@ -8,32 +8,32 @@ import { LigueNextMatches, Match } from '../../interfaces/ligue-next-matches';
   styleUrls: ['./ticket-group.component.css']
 })
 export class TicketGroupComponent {
-  matchesData !: LigueNextMatches;
+  matchesData !: Ticket;
   //array of all the matches 
-  matchesArray: Match[] = [];
+  matchesArray: TicketArray[] = [];
   //array of matches that didn't start yet 
-  nextMatch: Match[] = [];
+  nextMatch: TicketArray[] = [];
   ligue:string='';
-  constructor(private getMatchsService: GetMatchsService) {
-    //get data from service
-    this.getMatchsService.getLigue1Matchs().subscribe((matches: LigueNextMatches) => {
+  constructor(private getMatchsService: TicketService) {
+    //get data from service 
+    this.getMatchsService.getTicket().subscribe((matches: Ticket) => {
       this.matchesData = matches; 
-      this.ligue=this.matchesData.doc[0].data.name;
-      this.matchesArray = this.matchesData.doc[0].data.matches;
-      const now = new Date();
-     for (let match of this.matchesArray) {
-      //reform the date come from api
-      const [matchDay, matchMonth, matchYear] = match.time.date.split("/");
-      const [matchHour, matchMinute] = match.time.time.split(":");
-      // create a new Date object for the match time and date
-      const matchDate = new Date(2000+parseInt(matchYear), parseInt(matchMonth) - 1, parseInt(matchDay), parseInt(matchHour), parseInt(matchMinute));
-      //check if the date of the match > now date and add it to new array 
+      this.ligue="Ligue 1 22/23";
+      this.matchesArray = this.matchesData.ticket;
+      // const now = new Date();
+    //  for (let match of this.matchesArray) {
+    //   //reform the date come from api
+    //   const [matchDay, matchMonth, matchYear] = match.time.date.split("/");
+    //   const [matchHour, matchMinute] = match.time.time.split(":");
+    //   // create a new Date object for the match time and date
+    //   const matchDate = new Date(2000+parseInt(matchYear), parseInt(matchMonth) - 1, parseInt(matchDay), parseInt(matchHour), parseInt(matchMinute));
+    //   //check if the date of the match > now date and add it to new array 
       
-      if (matchDate>now) {
+    //   if (matchDate>now) {
         
-        this.nextMatch.push(match);
-      }
-     }
+    //     this.nextMatch.push(match);
+    //   }
+    //  }
   })
 
 

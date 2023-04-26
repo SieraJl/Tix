@@ -1,10 +1,10 @@
  <!--MAIN MENU WRAP BEGIN-->
  <div class="main-menu-wrap sticky-menu">
     <div class="container">
-        <a routerLink="/" class="custom-logo-link"><img src="assets/images/soccer/logo.png" id="imnavbar" alt="logo" class="custom-logo" > <h1>TIX</h1></a>
+        <a href="index-2.html" class="custom-logo-link"><img src="assets/images/soccer/logo.png" alt="logo" class="custom-logo"></a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar">eeee</span>
+            <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
@@ -15,7 +15,14 @@
                         <a  routerLink="/" ><span>Home</span></a>
                     </li>
                     <li  routerLinkActive="active">
-                        <a routerLink="/matches"   ><span>Matches</span></a>
+                        <a routerLink="/calender"><span>Calendrier</span></a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a ><span>Matches</span></a>
+                        <ul>
+                            <li><a routerLink="/matches"><span>Classement</span></a></li>
+                            <li><a  routerLink="/predir"><span>Predir</span></a></li>
+                        </ul>
                     </li>
                     <li  routerLinkActive="active">
                         <a routerLink="/shop"><span>Store</span></a>
@@ -27,8 +34,6 @@
                             <li><a href="player-second-page.html"><span>player second page</span></a></li>
                         </ul>
                     </li>
-                    <li><a href="news.html"><span>News</span></a></li>
-                    <li><a href="news-single.html"><span>News Single</span></a></li>
                     
                     <li><a href="contacts.html"><span>Contact</span></a></li>
                     

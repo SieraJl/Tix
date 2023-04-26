@@ -7,7 +7,7 @@
             </div>
             <div class="col-md-12">
                 <div class="broadcast-list" id="accordion" role="tablist" aria-multiselectable="true">
-                    <app-ticket *ngFor="let match of nextMatch" ligue={{ligue}} team1={{match.teams.home.name}} team2={{match.teams.away.name}} date={{match.time.date}} time={{match.time.time}}></app-ticket>
+                    <app-ticket *ngFor="let match of matchesArray" ligue={{this.ligue}} team1={{match.home_name}} team2={{match.away_name}} team1ID={{match.home_id}} team2ID={{match.away_id}} date={{match.date}} time={{match.time}}></app-ticket>
                    
                 </div>
 					

@@ -12,7 +12,4 @@ export class ClubService {
     getClubById(id:number): Observable<any>{
       return this.http.get('https://stats.fn.sportradar.com/bet365/fr/Africa:Lagos/gismo/stats_season_teampositionhistory/98175/'+id);
     }
-    
-    
-
   }
