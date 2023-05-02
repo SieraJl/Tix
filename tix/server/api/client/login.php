@@ -8,7 +8,9 @@
     include_once '../../class/client.php';
     $database = new Database();
     $db = $database->getConnection();
+    error_log($_POST['email'].' '.$_POST['password']);
     $items = new Client($db);
+    file_put_contents("post_data.log", print_r($_POST, true));
     $items->email = isset($_POST['email']) ? $_POST['email']: die();
     $items->password = isset($_POST['password']) ? $_POST['password']: die();
     $stmt = $items->login();
@@ -27,6 +29,7 @@
             
         }
         echo json_encode($e);
+        error_log(json_encode($e));
     }
     else{
         http_response_code(404);

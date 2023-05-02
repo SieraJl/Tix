@@ -1,0 +1,33 @@
+[30-Apr-2023 16:04:17 UTC] []
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: ticket_id in X:\Projects\tix_server\api\payment\set.php on line 11
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: client_id in X:\Projects\tix_server\api\payment\set.php on line 12
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: name in X:\Projects\tix_server\api\payment\set.php on line 13
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: mm in X:\Projects\tix_server\api\payment\set.php on line 14
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: yy in X:\Projects\tix_server\api\payment\set.php on line 15
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: ccv in X:\Projects\tix_server\api\payment\set.php on line 16
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: card_number in X:\Projects\tix_server\api\payment\set.php on line 17
+[30-Apr-2023 16:04:17 UTC] []
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: ticket_id in X:\Projects\tix_server\api\payment\set.php on line 11
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: client_id in X:\Projects\tix_server\api\payment\set.php on line 12
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: name in X:\Projects\tix_server\api\payment\set.php on line 13
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: mm in X:\Projects\tix_server\api\payment\set.php on line 14
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: yy in X:\Projects\tix_server\api\payment\set.php on line 15
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: ccv in X:\Projects\tix_server\api\payment\set.php on line 16
+[30-Apr-2023 16:04:17 UTC] PHP Notice:  Undefined index: card_number in X:\Projects\tix_server\api\payment\set.php on line 17
+[30-Apr-2023 16:06:24 UTC] {"ticket_id":"undefined","client_id":"19","name":"monatha carname","mm":"34","yy":"23","ccv":"232","card_number":"12873677897238776723"}
+[30-Apr-2023 16:09:44 UTC] {"ticket_id":"undefined","client_id":"19","name":"monatha carname","mm":"34","yy":"23","ccv":"232","card_number":"12873677897238776723"}
+[30-Apr-2023 16:11:34 UTC] {"ticket_id":"undefined","client_id":"19","name":"Montaha","mm":"32","yy":"23","ccv":"232","card_number":"23877627676376763767"}
+[30-Apr-2023 16:16:10 UTC] {"ticket_id":"1","client_id":"19","name":"montaha","mm":"23","yy":"23","ccv":"383","card_number":"23473647364736473647"}
+[30-Apr-2023 16:24:40 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in X:\Projects\tix_server\api\payment\set.php on line 20
+[30-Apr-2023 16:25:44 UTC] {"ticket_id":"1","client_id":"19","name":"montaha","mm":"23","yy":"23","ccv":"383","card_number":"23473647364736473647"}
+[30-Apr-2023 16:25:44 UTC] 
+[30-Apr-2023 16:25:44 UTC] PHP Warning:  A non-numeric value encountered in X:\Projects\tix_server\api\payment\set.php on line 24
+[30-Apr-2023 16:25:44 UTC] 0
+[30-Apr-2023 16:29:53 UTC] {"ticket_id":"1","client_id":"19","name":"montaha","mm":"23","yy":"23","ccv":"383","card_number":"23473647364736473647"}
+[30-Apr-2023 16:29:53 UTC] 1
+[30-Apr-2023 16:29:53 UTC] PHP Warning:  A non-numeric value encountered in X:\Projects\tix_server\api\payment\set.php on line 24
+[30-Apr-2023 16:29:53 UTC] 2
+[30-Apr-2023 16:30:27 UTC] {"ticket_id":"1","client_id":"19","name":"montaha","mm":"23","yy":"23","ccv":"383","card_number":"23473647364736473647"}
+[30-Apr-2023 16:30:27 UTC] 1
+[30-Apr-2023 16:34:50 UTC] {"ticket_id":"1","client_id":"19","name":"Salah foulen","mm":"21","yy":"23","ccv":"123","card_number":"25678886554567789987"}
+[30-Apr-2023 16:34:51 UTC] 1

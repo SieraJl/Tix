@@ -1,0 +1,107 @@
+[28-Apr-2023 08:10:01 UTC] johndoe@example.com password123
+[28-Apr-2023 08:10:01 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 08:10:01 UTC] johndoe@example.com password123
+[28-Apr-2023 08:10:01 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 08:20:41 UTC] johndoe@example.com password123
+[28-Apr-2023 08:20:41 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 08:21:14 UTC] johndoe@example.com password123
+[28-Apr-2023 08:21:14 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 08:21:51 UTC] johndoe@example.com password123
+[28-Apr-2023 08:21:51 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 08:21:55 UTC] johndoe@example.com password123
+[28-Apr-2023 08:21:55 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 08:56:00 UTC] johndoe@example.com password123
+[28-Apr-2023 08:56:00 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:07:52 UTC] johndoe@example.com password123
+[28-Apr-2023 09:07:52 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:07:54 UTC] johndoe@example.com password123
+[28-Apr-2023 09:07:54 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:07:58 UTC] johndoe@example.com password123
+[28-Apr-2023 09:07:58 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:07:58 UTC] johndoe@example.com password123
+[28-Apr-2023 09:07:58 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:07:59 UTC] johndoe@example.com password123
+[28-Apr-2023 09:07:59 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:08:58 UTC] johndoe@example.com password123
+[28-Apr-2023 09:08:58 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:13:58 UTC] johndoe@example.com password123
+[28-Apr-2023 09:13:58 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:16:44 UTC] johndoe@example.com password123
+[28-Apr-2023 09:16:44 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:24:11 UTC] johndoe@example.com password123
+[28-Apr-2023 09:24:11 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:29:37 UTC] johndoe@example.com password123
+[28-Apr-2023 09:29:37 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:29:46 UTC] johndoe@example.com password123
+[28-Apr-2023 09:29:46 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 09:30:39 UTC] johndoe@example.com password123
+[28-Apr-2023 09:30:39 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}[28-Apr-2023 12:27:50 UTC] johndoe@example.com password123
+[28-Apr-2023 12:27:50 UTC] johndoe@example.com password123
+[28-Apr-2023 12:27:50 UTC] johndoe@example.com password123
+[28-Apr-2023 12:27:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in X:\Projects\tix_server\class\client.php:29
+Stack trace:
+#0 X:\Projects\tix_server\api\client\login.php(16): Client->login()
+#1 {main}
+  thrown in X:\Projects\tix_server\class\client.php on line 29
+[28-Apr-2023 12:27:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in X:\Projects\tix_server\class\client.php:29
+Stack trace:
+#0 X:\Projects\tix_server\api\client\login.php(16): Client->login()
+#1 {main}
+  thrown in X:\Projects\tix_server\class\client.php on line 29
+[28-Apr-2023 12:27:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in X:\Projects\tix_server\class\client.php:29
+Stack trace:
+#0 X:\Projects\tix_server\api\client\login.php(16): Client->login()
+#1 {main}
+  thrown in X:\Projects\tix_server\class\client.php on line 29
+[28-Apr-2023 12:27:59 UTC] johndoe@example.com password123
+[28-Apr-2023 12:27:59 UTC] johndoe@example.com password123
+[28-Apr-2023 12:27:59 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 12:27:59 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[28-Apr-2023 12:28:13 UTC] johndoe@example.com password123
+[28-Apr-2023 12:28:13 UTC] {"login":true,"id_client":"1","nom":"John Doe","email":"johndoe@example.com","cin":"12345678","img":"image1.jpg"}
+[29-Apr-2023 02:58:21 UTC] PHP Notice:  Undefined index: nom in X:\Projects\tix_server\api\client\set.php on line 7
+[29-Apr-2023 02:58:21 UTC] PHP Notice:  Undefined index: email in X:\Projects\tix_server\api\client\set.php on line 8
+[29-Apr-2023 02:58:21 UTC] PHP Notice:  Undefined index: password in X:\Projects\tix_server\api\client\set.php on line 9
+[29-Apr-2023 02:58:21 UTC] PHP Notice:  Undefined index: cin in X:\Projects\tix_server\api\client\set.php on line 10
+[29-Apr-2023 02:58:21 UTC] {"message":"client created"}
+[29-Apr-2023 03:04:00 UTC] PHP Notice:  Undefined index: nom in X:\Projects\tix_server\api\client\set.php on line 7
+[29-Apr-2023 03:04:00 UTC] PHP Notice:  Undefined index: email in X:\Projects\tix_server\api\client\set.php on line 8
+[29-Apr-2023 03:04:00 UTC] PHP Notice:  Undefined index: password in X:\Projects\tix_server\api\client\set.php on line 9
+[29-Apr-2023 03:04:00 UTC] PHP Notice:  Undefined index: cin in X:\Projects\tix_server\api\client\set.php on line 10
+[29-Apr-2023 03:04:00 UTC] {"message":"client created"}
+[29-Apr-2023 03:04:04 UTC] PHP Notice:  Undefined index: nom in X:\Projects\tix_server\api\client\set.php on line 7
+[29-Apr-2023 03:04:04 UTC] PHP Notice:  Undefined index: email in X:\Projects\tix_server\api\client\set.php on line 8
+[29-Apr-2023 03:04:04 UTC] PHP Notice:  Undefined index: password in X:\Projects\tix_server\api\client\set.php on line 9
+[29-Apr-2023 03:04:04 UTC] PHP Notice:  Undefined index: cin in X:\Projects\tix_server\api\client\set.php on line 10
+[29-Apr-2023 03:04:04 UTC] {"message":"client created"}
+[29-Apr-2023 03:04:56 UTC] PHP Notice:  Undefined index: nom in X:\Projects\tix_server\api\client\set.php on line 12
+[29-Apr-2023 03:04:56 UTC] PHP Notice:  Undefined index: email in X:\Projects\tix_server\api\client\set.php on line 13
+[29-Apr-2023 03:04:56 UTC] PHP Notice:  Undefined index: password in X:\Projects\tix_server\api\client\set.php on line 14
+[29-Apr-2023 03:04:56 UTC] PHP Notice:  Undefined index: cin in X:\Projects\tix_server\api\client\set.php on line 15
+[29-Apr-2023 03:04:56 UTC] {"message":"client created"}
+[29-Apr-2023 03:04:56 UTC] PHP Notice:  Undefined index: nom in X:\Projects\tix_server\api\client\set.php on line 12
+[29-Apr-2023 03:04:56 UTC] PHP Notice:  Undefined index: email in X:\Projects\tix_server\api\client\set.php on line 13
+[29-Apr-2023 03:04:56 UTC] PHP Notice:  Undefined index: password in X:\Projects\tix_server\api\client\set.php on line 14
+[29-Apr-2023 03:04:56 UTC] PHP Notice:  Undefined index: cin in X:\Projects\tix_server\api\client\set.php on line 15
+[29-Apr-2023 03:04:56 UTC] {"message":"client created"}
+[29-Apr-2023 03:09:45 UTC] PHP Notice:  Undefined index: nom in X:\Projects\tix_server\api\client\set.php on line 12
+[29-Apr-2023 03:09:45 UTC] PHP Notice:  Undefined index: email in X:\Projects\tix_server\api\client\set.php on line 13
+[29-Apr-2023 03:09:45 UTC] PHP Notice:  Undefined index: password in X:\Projects\tix_server\api\client\set.php on line 14
+[29-Apr-2023 03:09:45 UTC] PHP Notice:  Undefined index: cin in X:\Projects\tix_server\api\client\set.php on line 15
+[29-Apr-2023 03:09:45 UTC] {"message":"client created"}
+[29-Apr-2023 03:09:45 UTC] PHP Notice:  Undefined index: nom in X:\Projects\tix_server\api\client\set.php on line 12
+[29-Apr-2023 03:09:45 UTC] PHP Notice:  Undefined index: email in X:\Projects\tix_server\api\client\set.php on line 13
+[29-Apr-2023 03:09:45 UTC] PHP Notice:  Undefined index: password in X:\Projects\tix_server\api\client\set.php on line 14
+[29-Apr-2023 03:09:45 UTC] PHP Notice:  Undefined index: cin in X:\Projects\tix_server\api\client\set.php on line 15
+[29-Apr-2023 03:09:45 UTC] {"message":"client created"}
+[29-Apr-2023 03:11:49 UTC] {"message":"client created"}
+[29-Apr-2023 03:13:15 UTC] {"message":"client created"}
+[29-Apr-2023 03:13:27 UTC] hcherif1919@gmail.com 123456
+[29-Apr-2023 03:13:27 UTC] {"login":true,"id_client":"18","nom":"cherif","email":"hcherif1919@gmail.com","cin":"09897454","img":""}
+[29-Apr-2023 04:22:02 UTC] {"message":"client created"}
+[29-Apr-2023 04:22:09 UTC] montaha@gmail.com 123456
+[29-Apr-2023 04:22:09 UTC] {"login":true,"id_client":"19","nom":"montaha","email":"montaha@gmail.com","cin":"98765432","img":""}
+[29-Apr-2023 07:06:18 UTC] montaha@gmail.com 123456
+[29-Apr-2023 07:06:18 UTC] {"login":true,"id_client":"19","nom":"montaha","email":"montaha@gmail.com","cin":"98765432","img":""}
+[29-Apr-2023 12:34:49 UTC] montaha@gmail.com 123456
+[29-Apr-2023 12:34:49 UTC] {"login":true,"id_client":"19","nom":"montaha","email":"montaha@gmail.com","cin":"98765432","img":""}
