@@ -2,10 +2,7 @@
     <h6>Latest matches</h6>
 
     <div class="main-lates-matches">
-       <app-match-list-item chempionship="champ exemple" team1="team1name" team2="team2 name" logoTeam1="assets/images/common/team-logo1.png" logoTeam2="assets/images/common/team-logo1.png" score="2:1"></app-match-list-item>
-       <app-match-list-item chempionship="champ exemple" team1="team1name" team2="team2 name" logoTeam1="assets/images/common/team-logo1.png" logoTeam2="assets/images/common/team-logo1.png" score="2:1"></app-match-list-item>
-       <app-match-list-item chempionship="champ exemple" team1="team1name" team2="team2 name" logoTeam1="assets/images/common/team-logo1.png" logoTeam2="assets/images/common/team-logo1.png" score="2:1"></app-match-list-item>
-       <app-match-list-item chempionship="champ exemple" team1="team1name" team2="team2 name" logoTeam1="assets/images/common/team-logo1.png" logoTeam2="assets/images/common/team-logo1.png" score="2:1"></app-match-list-item>
-       <app-match-list-item chempionship="champ exemple" team1="team1name" team2="team2 name" logoTeam1="assets/images/common/team-logo1.png" logoTeam2="assets/images/common/team-logo1.png" score="2:1"></app-match-list-item>
+       <app-match-list-item *ngFor="let match of matchesData.slice(-4)" chempionship="champ exemple" team1={{match.teams.home.name}} team2={{match.teams.away.name}} logoTeam1="assets/images/common/team-logo1.png" logoTeam2="assets/images/common/team-logo1.png" score1={{match.result.home}} score2={{match.result.away}} ></app-match-list-item>
+
      </div>
 </div>

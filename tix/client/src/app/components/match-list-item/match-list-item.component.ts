@@ -11,7 +11,8 @@ export class MatchListItemComponent {
   @Input() logoTeam1='';
   @Input() team2='';
   @Input() logoTeam2='';
-  @Input() score='';
+  @Input() score1='';
+  @Input() score2='';
   
 }
 //function to add two numbers

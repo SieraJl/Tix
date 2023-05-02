@@ -12,16 +12,16 @@
                 </div>
                 <div class="col-md-7 col-sm-10">
                     <div class="item-head-body">
-                        <!-- <a href="matches.html"><img src={{ this.getClubLogo(team1ID)}} width="40" height="40" alt="team-logo1"></a> -->
-                        <a href="matches.html"><img src="#" width="40" height="40" alt="team-logo1"></a>
+                      
+                        <a ><img src={{logo1}} width="40" height="40" alt="team-logo1"></a>
                         <span class="vs">vs</span>
-                        <!-- <a href="matches.html"><img src={{this.getClubLogo(team2ID)}} width="40" height="40" alt="team-logo1"></a> -->
-                        <a href="matches.html"><img src="#" width="40" height="40" alt="team-logo1"></a>
+                        <a><img src={{logo2}} width="40" height="40" alt="team-logo1"></a>
                         <span class="info">
                             <span class="then">{{team1}} VS {{team2}} </span>
                             <span class="what">{{ligue}}</span>
                         </span>
-                        <span class="marker">buy!</span>
+                        <a [routerLink]="['/payment', idt] "><span class="marker">buy!</span></a>
+                        
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">

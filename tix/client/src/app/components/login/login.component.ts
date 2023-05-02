@@ -1,4 +1,4 @@
-import { Component,OnInit  } from '@angular/core';
+import { Component  } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
@@ -36,19 +36,25 @@ export class LoginComponent  {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]]
-    });
+    }); 
   }
   onSubmit() {
     const email = this.loginForm.value.email;
     const password = this.loginForm.value.password;
-    this.authService.login(email, password).subscribe((response) => {
-      if (response) {
-        this.router.navigate(['/ticket-group']);
-      } else {
-        alert('error');
-      }
+    let auth = this.authService.login(email, password).subscribe
+    (data => {
+      console.log(data);
+      window.location.reload();
+    } );
+    
+      // if (auth) {
+      //   this.router.navigate(['/ticket-group']);
+      
+      // } else {
+      //   alert('error');
+      // }
 
-    })
+   
   }
 
 }

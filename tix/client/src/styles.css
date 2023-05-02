@@ -15210,7 +15210,7 @@ overflow-scroll.table tr td {
     background: 0 0;
 }
 .main-slider-section {
-    background: url(./assets/images/soccer/main-slider.jpg) no-repeat;
+    background: url(./assets/images/soccer/main-slider.jpg) no-repeat; 
     background-size: cover;
 }
 #main-slider {

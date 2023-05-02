@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +30,9 @@ import { LoginComponent } from './components/login/login.component';
 import { CalenderComponent } from './pages/calender/calender.component';
 import { PredirComponent } from './pages/predir/predir.component';
 import { PredirElementComponent } from './components/predir-element/predir-element.component';
+import { BuyComponent } from './pages/buy/buy.component';
+import { PaymentFormComponent } from './components/payment-form/payment-form.component';
+import { PaymentComponent } from './pages/payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -57,14 +60,18 @@ import { PredirElementComponent } from './components/predir-element/predir-eleme
     LoginComponent,
     CalenderComponent,
     PredirComponent,
-    PredirElementComponent
+    PredirElementComponent,
+    BuyComponent,
+    PaymentFormComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule ,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

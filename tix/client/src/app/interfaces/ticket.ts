@@ -11,4 +11,6 @@ export interface Ticket {
     away_name: string
     date: string
     time: string
+    home_logo:string
+    away_logo:string
   }

@@ -12,7 +12,7 @@ export class GetMatchsService {
       return this.http.get('https://stats.fn.sportradar.com/bet365/fr/Africa:Lagos/gismo/stats_season_fixtures2/98175/1');
     }
    
-
+ 
 }
 
   

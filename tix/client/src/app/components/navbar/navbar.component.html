@@ -1,7 +1,8 @@
  <!--MAIN MENU WRAP BEGIN-->
  <div class="main-menu-wrap sticky-menu">
     <div class="container">
-        <a href="index-2.html" class="custom-logo-link"><img src="assets/images/soccer/logo.png" alt="logo" class="custom-logo"></a>
+        <a href="index-2.html" class="custom-logo-link"><img src="assets/images/soccer/logo.ico" height="115" alt="logo" class="custom-logo"> </a>
+        
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -27,57 +28,28 @@
                     <li  routerLinkActive="active">
                         <a routerLink="/shop"><span>Store</span></a>
                     </li>
-                    <li>
-                        <a href="staff.html"><span>Team</span></a>
-                        <ul>
-                            <li><a href="player.html"><span>player first page</span></a></li>
-                            <li><a href="player-second-page.html"><span>player second page</span></a></li>
-                        </ul>
-                    </li>
+                   
                     
                     <li><a href="contacts.html"><span>Contact</span></a></li>
                     
-                    <li class="cart full">
-                        <a href="#cart">
-                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                        </a>
-                        <div class="cart-drop">
-                            <table class="ct">
-                                <tr>
-                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
-                                    <td class="info">
-                                        <img class="product-image" src="assets/images/common/cart-product.jpg" alt="product-image">
-                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
-                                    <td class="info">
-                                        <img class="product-image" src="assets/images/common/cart-product.jpg" alt="product-image">
-                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="wrap">
-                                <div class="total-text">Subtotal: </div>
-                                <div class="total-digit">£ 120</div>
-                            </div>
-                            <div class="wrap btn-wrap">
-                                <a href="cart.html" class="btn view">View cart</a>
-                                <a href="checkout.html" class="btn check">checkout cart</a>
-                            </div>
-                        </div>
-                    </li>	
-
-                    <li class="register">
+                    
+                    <li class="register" *ngIf="!isLoggedIn()" >
                         <a href="/register" >
-                            <span><i class="fa fa-user " aria-hidden="true"></i></span>
+                            <span>Login/Signup</span>
                         </a>
+                    </li>
+                    <li *ngIf="isLoggedIn()">
+                        <a ><span><i class="fa fa-user " aria-hidden="true"></i> profile</span></a>
+                        <ul >
+                            <li><a routerLink="#"><span>{{this.name}}</span></a></li>
+                            <li><button  (click)="logout()" ><span>Logout</span></button></li>
+                        </ul>
                     </li>
                 </ul>
             </div>       
         </nav>
     </div>
+    
 </div>
 <!--MAIN MENU WRAP END-->
 

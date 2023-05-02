@@ -7,8 +7,10 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { ClubPageComponent } from './pages/club-page/club-page.component';
 import { AuthGuard } from './guards/auth.guard';
+import { NotLoggedInGuard } from './guards/not-logged-in.guard';
 import { CalenderComponent } from './pages/calender/calender.component';
 import { PredirComponent } from './pages/predir/predir.component';
+import { PaymentComponent } from './pages/payment/payment.component';
 const routes: Routes = [
   {
     path:'',
@@ -24,11 +26,18 @@ const routes: Routes = [
   },
   {
     path:'register',  
-    component: RegisterComponent
+    component: RegisterComponent,
+    canActivate: [
+      NotLoggedInGuard
+  ]
   },
   {
     path:'club/:id',
     component:ClubPageComponent
+  },
+  {
+    path:'payment/:id',
+    component:PaymentComponent
   },
   {
     path:'calender',
@@ -45,7 +54,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'top'
+    })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

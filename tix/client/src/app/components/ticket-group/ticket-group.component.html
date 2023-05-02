@@ -4,11 +4,14 @@
             <div class="col-md-12">
                 <h4>achetez vos ticket</h4>
                 <p>Vibrez au rythme des rencontres de Ligue 1 , l'un des plus grands championnats d'Afrique. Supportez votre club favori dans un stade bruyant et plein à craquer !</p>                
+                <div class="search-hero input-group-lg" *ngIf="this.nbrOfLines=='all'">
+                    <input class="form-control " type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442; Start searching for a hero by id or name or country">
+                  </div>
             </div>
             <div class="col-md-12">
                 <div class="broadcast-list" id="accordion" role="tablist" aria-multiselectable="true">
-                    <app-ticket *ngFor="let match of matchesArray" ligue={{this.ligue}} team1={{match.home_name}} team2={{match.away_name}} team1ID={{match.home_id}} team2ID={{match.away_id}} date={{match.date}} time={{match.time}}></app-ticket>
-                   
+                    <app-ticket  *ngFor="let match of matchesArray | filter:searchText" ligue={{this.ligue}} idt={{match.id_ticket}} team1={{match.home_name}} team2={{match.away_name}} team1ID={{match.home_id}} team2ID={{match.away_id}} date={{match.date}} time={{match.time}} logo1={{match.home_logo}} logo2={{match.away_logo}}></app-ticket>
+                    <a *ngIf="this.nbrOfLines!=='all'" routerLink="/calender" type="button" class="btn btn-warning">Voir plus ></a>
                 </div>
 					
             </div>
